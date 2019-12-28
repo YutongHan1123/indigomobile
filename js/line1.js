@@ -1,4 +1,4 @@
-var margin1 = {top: 20, right: 25, bottom: 20, left: 25};
+var margin1 = {top: 20, right: 35, bottom: 20, left: 35};
 var width1 = window.innerWidth - margin1.left - margin1.right;
 var height = window.innerHeight/2 - margin1.top - margin1.bottom;
 
@@ -123,7 +123,7 @@ svg.append("text")
    .attr("y", window.innerHeight*0.2)
    .text("Cotton")
    .style("font-size", "12px")
-   .style("font-family", "'Fredoka One', cursive")
+   .style("font-family", "'Mansalva', cursive")
    .style("font-weight", "lighter")
    .style("fill", "#205e8a")
    .attr("alignment-baseline","middle");
@@ -133,7 +133,7 @@ svg.append("text")
   .attr("y", window.innerHeight*0.32)
   .text("Wool")
   .style("font-size", "12px")
-  .style("font-family", "'Fredoka One', cursive")
+  .style("font-family", "'Mansalva', cursive")
   .style("font-weight", "lighter")
   .style("fill", "#878787")
   .attr("alignment-baseline","middle");
@@ -143,7 +143,7 @@ svg.append("text")
   .attr("y", window.innerHeight*0.33)
   .text("Silk")
   .style("font-size", "12px")
-  .style("font-family", "'Fredoka One', cursive")
+  .style("font-family", "'Mansalva', cursive")
   .style("font-weight", "lighter")
   .style("fill", "#878787")
   .attr("alignment-baseline","middle");
@@ -155,7 +155,7 @@ svg.append("text")
   .attr("y", window.innerHeight*0.005)
   .text("Total Exports of Cotton, Wool and Silk from China to the World")
   .style("font-size", "16px")
-  .style("font-family", "'Fredoka One', cursive")
+  .style("font-family", "'Mansalva', cursive")
   .style("font-weight", "lighter")
   .style("fill", "#205e8a")
   .attr("alignment-baseline","middle");
@@ -166,7 +166,7 @@ svg.append("text")
    .attr("y", 20)
    .text("Unit: Million Dollar")
    .style("font-size", "12px")
-   .style("font-family", "'Fredoka One', cursive")
+   .style("font-family", "'Mansalva', cursive")
    .style("font-weight", "lighter")
    .style("fill", "#878787")
    .attr("alignment-baseline","middle");
@@ -235,7 +235,7 @@ const type = d3.annotationCustomType(
             .append("g")
             .attr("class", "annotation-group")
             .call(makeAnnotations)
-            .style("font-size", "10px")
-            .style("font-family", "'Fredoka One', cursive")
+            .style("font-size", "12px")
+            .style("font-family", "'Mansalva', cursive")
             .style("font-weight", "lighter");
  })

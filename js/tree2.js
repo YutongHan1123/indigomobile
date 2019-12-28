@@ -1,12 +1,12 @@
-var margin = {top: 80, right: 20, bottom: 20, left: 20},
-  width = window.innerWidth - margin.left - margin.right,
-  height = window.innerHeight/2.2 - margin.top - margin.bottom;
+var margin02 = {top: 80, right: 20, bottom: 20, left: 20},
+  width = window.innerWidth - margin02.left - margin02.right,
+  height = window.innerHeight/2.2 - margin02.top - margin02.bottom;
 var svg2 = d3.select("#dog")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin02.left + margin02.right)
+            .attr("height", height + margin02.top + margin02.bottom)
             .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin02.left + "," + margin02.top + ")");
 
 //Tooltip
 var tooltip = d3.select("body").append("div")
@@ -20,7 +20,7 @@ d3.csv('./data/tree2.csv', function(data) {
     (data);
   root2.sum(function(d) { return +d.value })
   d3.treemap()
-    .size([430, height])
+    .size([width, height])
     .padding(4)
     (root2)
 
@@ -77,9 +77,9 @@ svg2.append("text")
  .attr("x", window.innerWidth*0.15)
  .attr("y", -window.innerHeight*0.03)
  .text("The Top 5 Exports from USA to the World in 1962")
- .style("font-size", "12px")
+ .style("font-size", "18px")
  .style("fill", "#878787")
- .style("font-family", "'Fredoka One', cursive")
+ .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")
  .attr("alignment-baseline","middle");
 })

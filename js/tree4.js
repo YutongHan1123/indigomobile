@@ -1,12 +1,12 @@
-var margin = {top: 60, right: 20, bottom: 20, left: 20},
-  width = window.innerWidth - margin.left - margin.right,
-  height = window.innerHeight/2.2 - margin.top - margin.bottom;
+var margin04 = {top: 60, right: 20, bottom: 20, left: 20},
+  width = window.innerWidth - margin04.left - margin04.right,
+  height = window.innerHeight/2.2 - margin04.top - margin04.bottom;
 var svg4 = d3.select("#dog")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin04.left + margin04.right)
+            .attr("height", height + margin04.top + margin04.bottom)
             .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin04.left + "," + margin04.top + ")");
 
 d3.csv('./data/tree4.csv', function(data) {
   var root4 = d3.stratify()
@@ -15,7 +15,7 @@ d3.csv('./data/tree4.csv', function(data) {
     (data);
   root4.sum(function(d) { return +d.value })
   d3.treemap()
-    .size([430, height])
+    .size([width, height])
     .padding(4)
     (root4)
 
@@ -62,9 +62,9 @@ svg4.append("text")
  .attr("x", window.innerWidth*0.15)
  .attr("y", -window.innerHeight*0.03)
  .text("The Top 5 Exports from USA to the World in 2018")
- .style("font-size", "12px")
+ .style("font-size", "18px")
  .style("fill", "#878787")
- .style("font-family", "'Fredoka One', cursive")
+ .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")
  .attr("alignment-baseline","middle");
 })

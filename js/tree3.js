@@ -1,14 +1,14 @@
-var margin = {top: 60, right: 20, bottom: 20, left: 20},
-  width = window.innerWidth - margin.left - margin.right,
-  height = window.innerHeight/2.2 - margin.top - margin.bottom;
+var margin03 = {top: 60, right: 20, bottom: 20, left: 20},
+  width = window.innerWidth - margin03.left - margin03.right,
+  height = window.innerHeight/2.2 - margin03.top - margin03.bottom;
 
 // append the svg object to the body of the page
 var svg3 = d3.select("#dog")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("width", width + margin03.left + margin03.right)
+            .attr("height", height + margin03.top + margin03.bottom)
             .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin03.left + "," + margin03.top + ")");
 
 // Read data
 d3.csv('./data/tree3.csv', function(data) {
@@ -23,7 +23,7 @@ d3.csv('./data/tree3.csv', function(data) {
   // Then d3.treemap computes the position of each element of the hierarchy
   // The coordinates are added to the root object above
   d3.treemap()
-    .size([420, height])
+    .size([width, height])
     .padding(4)
     (root3)
 
@@ -72,9 +72,9 @@ svg3.append("text")
  .attr("x", window.innerWidth*0.15)
  .attr("y", -window.innerHeight*0.03)
  .text("The Top 5 Exports from China to the World in 2018")
- .style("font-size", "12px")
+ .style("font-size", "18px")
  .style("fill", "#205e8a")
- .style("font-family", "'Fredoka One', cursive")
+ .style("font-family", "'Mansalva', cursive")
  .style("font-weight", "lighter")
  .attr("alignment-baseline","middle");
 })
