@@ -108,7 +108,7 @@ body {
 #title {
   text-align: center;
   color: white;
-  font-size: 80px;
+  font-size: 100px;
   padding-top: 80px;
   /* padding-bottom: 50px; */
   font-family: 'Mansalva', cursive;
@@ -159,7 +159,7 @@ span {
 }
 #subt {
   text-align: center;
-  font-size: 30px;
+  font-size: 70px;
   padding-top: 70px;
   padding-bottom: 140px;
   font-family: 'Mansalva', cursive;
@@ -171,7 +171,7 @@ span {
 }
 .unmove {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 50px;
   text-shadow: 5px 5px #fad469;
   color: #205e8a;
   padding-bottom: 0px;
@@ -249,21 +249,7 @@ span {
   text-align: center;
   width: 100%;
 }
-.container_bu2 {
-  float: left;
-  width: 21%;
-  padding: 5px;
-}
-.container_bu22 {
-  float: left;
-  width: 26%;
-  padding: 5px;
-}
-.container_bu3 {
-  float: left;
-  width: 16%;
-  padding: 5px;
-}
+
 .row5::after {
   content: "";
   clear: both;
@@ -436,11 +422,4 @@ a:hover { color: #ffcc66 }
   line-height: 1.5em;
   margin-bottom: 80px;
   padding-bottom: -10px;
-}
-.simgp4{
-  font-size: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  /* padding-top: -100px; */
-  /* text-align: center; */
 }
