@@ -431,14 +431,13 @@ a:hover { color: #ffcc66 }
   margin-bottom: 80px;
 }
 .simg4{
-  max-width: 450px;
+  width: 80%;
   font-size: 13px;
   line-height: 1.5em;
   margin-bottom: 80px;
   padding-bottom: -10px;
 }
 .simgp4{
-  max-width: 500px;
   font-size: 15px;
   padding-left: 25px;
   padding-right: 25px;
